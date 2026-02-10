@@ -1,0 +1,22 @@
+.home {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Desktop: 2 columns */
+@media (min-width: 900px) {
+  .home {
+    grid-template-columns: 1fr 2fr; /* player | global */
+    align-items: start;
+  }
+}
+
+/* Optional: make sections look like cards */
+.player,
+.leaderboards {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+}

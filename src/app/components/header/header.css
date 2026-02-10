@@ -1,0 +1,27 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #333;
+    background-color: #555;
+    color: #fff;
+}
+.app-title {
+    font-size: 24px;
+    margin: 0;
+}
+.placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .right {
+        display: none; /* Hide player info on small screens */
+    }
+    .app-title {
+        font-size: 20px;
+    }
+}

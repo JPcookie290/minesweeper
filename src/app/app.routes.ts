@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { GameComponent } from './pages/game/game.component';
-import { EndComponent } from './pages/end/end.component';
-
-
+import { Home } from './pages/home/home';
+import { Game } from './pages/game/game';
+import { End } from './pages/end/end';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'game', component: GameComponent },
-  { path: 'end', component: EndComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: Home },
+  { path: 'game', component: Game },
+  { path: 'end', component: End },
+  { path: '**', redirectTo: 'home' }
 ];

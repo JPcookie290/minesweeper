@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { PlayerPanel } from '../../components/player-panel/player-panel';
+import { GlobalLeaderboards } from '../../components/global-leaderboards/global-leaderboards';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  standalone: true,
+  imports: [PlayerPanel, GlobalLeaderboards],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrls: ['./home.css'],
 })
-export class Home {
-
-}
+export class Home {}

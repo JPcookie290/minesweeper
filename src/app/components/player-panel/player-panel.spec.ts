@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlayerPanerl } from './player-panerl';
+import { PlayerPanel } from './player-panel';
 
 describe('PlayerPanerl', () => {
-  let component: PlayerPanerl;
-  let fixture: ComponentFixture<PlayerPanerl>;
+  let component: PlayerPanel;
+  let fixture: ComponentFixture<PlayerPanel>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PlayerPanerl]
+      imports: [PlayerPanel]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PlayerPanerl);
+    fixture = TestBed.createComponent(PlayerPanel);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

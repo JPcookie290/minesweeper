@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-end',
-  imports: [],
+  standalone: true,
   templateUrl: './end.html',
-  styleUrl: './end.css',
+  styleUrls: ['./end.css'],
 })
-export class End {
-
-}
+export class End {}
